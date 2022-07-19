@@ -1,0 +1,87 @@
+-- hosts:
+  name: helpernode
+    hostname: ocp-svc
+    VCPU: 4
+    RAM: 6GB
+    HDD: 150 GB
+    zone: internal
+      ip: 172.19.195.153
+      mac: 00:0C:29:73:2C:FC
+      if: ens33 <=> ens224
+    zone: external
+      ip: 192.168.0.153
+      mac: 00:0C:29:73:2C:06
+      if: ens36ping <=> ens192
+  name: bootstrap
+    hostname: ocp-bootstrap
+    VCPU: 6
+    RAM: 10GB
+    HDD: 50 GB
+    domain: annuaire.groupe.local
+    cluster_name: ocp
+    Network: 172.195.195.0/24
+    zone: internal
+      if: ens224
+      ip: 172.19.195.154
+      mac: 
+  name: cp1
+    hostname: ocp-cp1
+    VCPU: 4
+    RAM: 8GB
+    HDD: 50 GB
+    domain: annuaire.groupe.local
+    cluster_name: ocp
+    Network: 172.195.195.0/24
+    zone: internal
+      if: ens224
+      ip: 172.19.195.155
+      mac: 
+  name: cp2
+    hostname: ocp-cp2
+    VCPU: 4
+    RAM: 8GB
+    HDD: 50 GB
+    domain: annuaire.groupe.local
+    cluster_name: ocp
+    Network: 172.195.195.0/24
+    zone: internal
+      if: ens224
+      ip: 172.19.195.156
+      mac: 
+  name: cp3
+    hostname: ocp-cp3
+    VCPU: 4
+    RAM: 8GB
+    HDD: 50 GB
+    domain: annuaire.groupe.local
+    cluster_name: ocp
+    Network: 172.195.195.0/24
+    zone: internal
+      if: ens224
+      ip: 172.19.195.157
+      mac: 
+  name: w1
+    hostname: ocp-w1
+    VCPU: 4
+    RAM: 8GB
+    HDD: 50 GB
+    domain: annuaire.groupe.local
+    cluster_name: ocp
+    Network: 172.195.195.0/24
+    zone: internal
+      if: ens224
+      ip: 172.19.195.158
+      mac: 
+  name: w2
+    hostname: ocp-w2
+    VCPU: 4
+    RAM: 8GB
+    HDD: 50 GB
+    domain: annuaire.groupe.local
+    cluster_name: ocp
+    Network: 172.195.195.0/24
+    zone: internal
+      if: ens224
+      ip: 172.19.195.159
+      mac: 
+
