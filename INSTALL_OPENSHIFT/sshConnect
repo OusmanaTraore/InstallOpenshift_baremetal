@@ -3,7 +3,7 @@
 read -p " Give the name for new ssk-key ! " sshKeyName
  ssh-keygen -t ed25519 -N '' -f ~/.ssh/$sshKeyName
  eval $(ssh-agent -s)
- ssh-add ~/.ssh/sshKeyName
+ ssh-add ~/.ssh/$sshKeyName
   
  sudo sed -i 's/#PubkeyAuthentication yes/PubkeyAuthentication yes/g' /etc/ssh/sshd_config
  sudo sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
