@@ -37,8 +37,15 @@ sudo firewall-cmd --reload
 
 # Enable and start  services 
 echo " | Enable and start  services  >>"
-sudo systemctl enable nfs-server rpcbind
-sudo systemctl start nfs-server rpcbind nfs-mountd
+sudo systemctl enable nfs-server 
+sudo systemctl enable  rpcbind
 
+sudo systemctl start nfs-server 
+sudo systemctl start rpcbind 
+sudo systemctl start nfs-mountd
+
+sudo systemctl status nfs-server 
+sudo systemctl status rpcbind 
+sudo systemctl status nfs-mountd
 ############################# END   OF installation and configuration of NFS ############################################
 #|||=>
