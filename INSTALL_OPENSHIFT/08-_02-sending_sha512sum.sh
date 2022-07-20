@@ -23,15 +23,16 @@ sed -i -e "9a shaWorker=\"$shaworker\"" 09-deploy_Openshift.sh
 echo " | Checking availability of sha512sum  (bootstrap.ign, master.ign, worker.ign) for deployment  >>"
 test(){
   IFS=":"
-  vm="shaBoot:shaMaster:shaWorker" 
-  for var in vm
+  vm="shaboot:shamaster:shaworker" 
+  for var in $vm
   do
-      test=$( grep $var 09-deploy_Openshift.sh | cut -d "=" -f 2)
-      if [[  $test = "" ]]
+      test=$( grep $var 09-deploy_Openshift.sh | cut -d "\"" -f 2)
+      if [[  $test -z c ]] # test si la chaine est vide
            then 
-            echo "availability of sha512sum for $test : FAILED"
-      else
-           echo "availability of sha512sum for $test : SUCCEED"
+            echo "availability of sha512sum for $var : FAILED"
+      elif [[  $test -n c ]] # test si la chaine  n'est  pas vide
+          then
+           echo "availability of sha512sum for $var : SUCCEED"
       fi
   done
 }
