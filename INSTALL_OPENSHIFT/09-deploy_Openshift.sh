@@ -4,9 +4,7 @@
 ############################# BEGIN  OF Deploying to NODE ############################################
 #|||=>
 ip_cluster="172.19.195.153"
-shaBoot="b69251d218afe2983af55ee6b553efba1bd36dd1d2ebd8ca320a0086ac6a74cc5b731b9f4702cf3f8cd35b5c1f089e1952077f887abc568e65f6a9a1b91de815"
-shaMaster="a67668f339b4d7e95addfee85246a9fe70a348f5352e98cb14bd832d551c1814a08e6c6a1b9dd8d170a962f01840f0fb16329370b14931cba2f40176fe437952"
-shaWorker="d9a771f00d215cbe78df2007e136090c9a6740f5e19cf4a2ebe74f2da9efb536e97d8ab9e2c619a1c22bcb54e38b2ebe1f9dec3396371261afa75b69b9fd20a8"
+
 if [[ $shaBoot = "" ]] 
 then 
     echo " du bootstrap  sha512 is empty"
