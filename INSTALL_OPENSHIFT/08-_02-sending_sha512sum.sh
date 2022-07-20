@@ -27,10 +27,10 @@ test(){
   for var in $vm
   do
       test=$( grep $var 09-deploy_Openshift.sh | cut -d "\"" -f 2)
-      if [[  $test -z c ]] # test si la chaine est vide
+      if [[   -z $test  ]] # test si la chaine est vide
            then 
             echo "availability of sha512sum for $var : FAILED"
-      elif [[  $test -n c ]] # test si la chaine  n'est  pas vide
+      elif [[ -n $test ]] # test si la chaine  n'est  pas vide
           then
            echo "availability of sha512sum for $var : SUCCEED"
       fi
