@@ -8,7 +8,7 @@
  dnf update
  dnf install git tree -y
 
- git clone https://github.com/ryanhay/ocp4-metal-install
+ git clone https://github.com/ryanhay/ocp4-metal-install.git
 
 ############################# END   OF installation and configuration of DHCP #########################################
 ############################# BEGIN OF DOWNLOADS OPENSHIFT-INSTALL OPENSHIFT-CLIENT , ISO #############################
