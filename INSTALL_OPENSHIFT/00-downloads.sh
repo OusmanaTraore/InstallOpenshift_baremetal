@@ -53,7 +53,7 @@ sleep 2
 echo " | Checking  Version >>"
  sudo mv makeDirectory/Downloads/oc makeDirectory/Downloads/kubectl /usr/local/bin
 
- ./oc version 
+ oc version 
  kubectl version
 
 ############################# END   OF CHECKING CLIENT TOOLS ARE WORKING ############################################
