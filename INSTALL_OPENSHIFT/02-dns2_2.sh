@@ -17,7 +17,7 @@ sudo firewall-cmd --reload
 echo " | Enable and start the service  >>"
 sudo systemctl enable named
 sudo systemctl start named
-sudo systemctl status named
+sudo systemctl status named | grep Active
 
 # Using local DNS
 echo -n " | Change the LAN nic (ens192) to use 127.0.0.1 for DNS AND
