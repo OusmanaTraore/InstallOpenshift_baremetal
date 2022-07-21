@@ -2,13 +2,13 @@
 
 ############################# BEGIN  OF installation utils ############################################
 #|||=>
- sudo mkdir ~/makeDirectory
- sudo cd ~/makeDirectory
+sudo mkdir ~/makeDirectory
+cd ~/makeDirectory
 
  sudo dnf update
  sudo dnf install git tree -y
 
- sudo git clone https://github.com/ryanhay/ocp4-metal-install.git
+sudo git clone https://github.com/ryanhay/ocp4-metal-install.git
 
 ############################# END   OF installation and configuration of DHCP #########################################
 ############################# BEGIN OF DOWNLOADS OPENSHIFT-INSTALL OPENSHIFT-CLIENT , ISO #############################
@@ -20,9 +20,8 @@ then
 else 
      sudo mkdir Downloads
      echo " | CHANGE DIRECTORY => Downloads >>"
-     sudo cd Downloads
 fi
-
+ sudo cd Downloads
 
 # Opensfhit installer
 echo " | téléchargement de openshift installer >>"
@@ -33,7 +32,7 @@ sudo curl   https://mirror.openshift.com/pub/openshift-v4/x86_64/clients/ocp/sta
 echo " | téléchargement de command line tool CLI >>"
 #curl  https://mirror.openshift.com/pub/openshift-v4/x86_64/clients/ocp/stable/openshift-client-windows.zip 
 
- sudo curl  https://mirror.openshift.com/pub/openshift-v4/x86_64/clients/ocp/stable/openshift-client-linux.tar.gz | tar -xz
+sudo curl  https://mirror.openshift.com/pub/openshift-v4/x86_64/clients/ocp/stable/openshift-client-linux.tar.gz | tar -xz
 
 
 
