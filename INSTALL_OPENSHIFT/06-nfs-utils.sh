@@ -44,8 +44,8 @@ sudo systemctl start nfs-server
 sudo systemctl start rpcbind 
 sudo systemctl start nfs-mountd
 
-sudo systemctl status nfs-server 
-sudo systemctl status rpcbind 
-sudo systemctl status nfs-mountd
+sudo systemctl status nfs-server   | grep Active
+sudo systemctl status rpcbind   | grep Active
+sudo systemctl status nfs-mountd  | grep Active
 ############################# END   OF installation and configuration of NFS ############################################
 #|||=>
