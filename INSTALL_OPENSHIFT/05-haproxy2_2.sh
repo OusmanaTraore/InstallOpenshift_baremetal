@@ -25,7 +25,7 @@ echo " | Enable and start the service  >>"
 sudo setsebool -P haproxy_connect_any 1 # SELinux name_bind access
 sudo systemctl enable haproxy
 sudo systemctl start haproxy
-sudo systemctl status haproxy
+sudo systemctl status haproxy | grep Active
 
 ############################# END   OF installation and configuration of HAPROXY ############################################
 #|||=>
