@@ -10,7 +10,7 @@ sudo dnf install haproxy -y
 
 # Applying configuration 
 echo " | Applying configuration  >>"
-sudo cp ~/ocp4-metal-install/haproxy.cfg /etc/haproxy/haproxy.cfg
+sudo cp ~/makeDirectory/ocp4-metal-install/haproxy.cfg /etc/haproxy/haproxy.cfg
 
 
 ############################# END   OF installation and configuration of HAPROXY ############################################
