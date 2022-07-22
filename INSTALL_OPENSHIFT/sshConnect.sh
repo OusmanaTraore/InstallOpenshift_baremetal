@@ -13,10 +13,11 @@ read -p " Give the name for new ssk-key ! " sshKeyName
  sudo systemctl status sshd | grep Active
                                
               
- read -p "| Change  User password ? >>" pass
+ read -p "| Change  User password ? >> " pass
  if [[ $pass == "yes" ]] || [[ $pass == "y" ]]
  then
-   sudo passwd $pass
+    read -p "| Enter the uername >> " user_name 
+   sudo passwd $user_name
  elif [[ $pass == "no" ]] || [[ $pass == "n" ]]
  then
    echo " You choose to not change the USER password "
