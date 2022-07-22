@@ -7,8 +7,8 @@
 # Generate ssh-key  
 echo " | Generate ssh-key   >>"
 sudo ssh-keygen -t ed25519 -N '' -f  ~/.ssh/install_openshift
-sudo eval $(ssh-agent -s)
-sudo ssh-add ~/.ssh/install_openshift
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/install_openshift
 
 # Creating Install Directory 
 echo " | Creating Install Directory  >>"
