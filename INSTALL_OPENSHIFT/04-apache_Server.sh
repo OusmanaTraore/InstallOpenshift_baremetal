@@ -30,7 +30,7 @@ sudo systemctl status httpd grep Active
 # Test the Connection 
 echo " | Test the Connection >>"
 
-curl loaclhost:8080
+curl localhost:8080
 
 ############################# END   OF installation and configuration of APACHE SERVER ############################################
 #|||=>
