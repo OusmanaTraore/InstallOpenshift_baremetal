@@ -24,7 +24,7 @@ sudo firewall-cmd --reload
 echo " | Enable and start the service  >>"
 sudo systemctl enable httpd
 sudo systemctl start httpd
-sudo systemctl status httpd
+sudo systemctl status httpd grep Active
 
 
 # Test the Connection 
