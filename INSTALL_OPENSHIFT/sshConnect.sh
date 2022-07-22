@@ -10,7 +10,7 @@ read -p " Give the name for new ssk-key ! " sshKeyName
   
  echo "| Restart du service sshd >>" 
  sudo systemctl restart sshd
- sudo systemctl status sshd
+ sudo systemctl status sshd | grep Active
                                
               
  read -p "| Change  User password ? >>" pass
