@@ -5,7 +5,7 @@
 
 # Generates Kubernetes Manifests files 
 echo " | Generates Kubernetes Manifests files  >>"
-cp ~/makeDirectory/Downloads/openshift-install .
+cp ~/makeDirectory/openshift-install .
 ./openshift-install create manifests --dir ~/makeDirectory/ocp-install
 
 # Rendre le master No schedulabe 
@@ -32,7 +32,7 @@ cp -R ~/makeDirectory/ocp-install/* /var/www/html/ocp4
 
 # Moving the CoreOs image to the web server directory 
 echo " | Moving the CoreOs image to the web server directory  >>"
-mv ~/makeDirectory/Downloads/rhcos-* /var/www/html/ocp4/rhcos
+mv ~/makeDirectory/rhcos-* /var/www/html/ocp4/rhcos
 
 # Change the ownership and permissions of the web server directory
 echo " | Change the ownership and permissions of the web server directory  >>"
